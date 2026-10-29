@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flyfie ∙ Your journey partner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="images/logo.jpeg" alt="Flyfie Logo">
+            <h1>Flyfie</h1>
+        </a>
+        <ul class="nav-links">
+            <li>
+                <a href="index.html" class="active">Home</a>
+            </li>
+
+            <li>
+                <a href="profile.html">About Us</a>
+            </li>
+
+            <li class="dropdown">
+
+        <a href="destinations.html">
+            Destinations <span class="arrow"></span>
+        </a>
+
+        <ul class="dropdown-menu">
+            <li>
+                <a href="domestic.html">Domestic</a>
+            </li>
+
+            <li>
+                <a href="international.html">International</a>
+            </li>
+        </ul>
+
+            <li>
+                <a href="promos.html">Promos</a>
+            </li>
+
+            <li>
+                <a href="bookingform.html">Booking</a>
+            </li>
+
+            <li>
+                <a href="schedule.html">Schedules</a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Fly beyond,<br>fly with Flyfie.</h2>
+            <p>Explore various destinations with a safe, comfortable, and enjoyable journey with Flyfie.</p>
+            <a href="bookingform.html" class="btn">Book Ticket</a>
+        </div>
+    </section>
+
+    <section class="booking-box">
+        <h2>Search Flights</h2>
+        <form>
+            <div class="form-group">
+                <label for="from">From</label>
+                <select id="from">
+                    <option value="">Select City</option>
+                    <optgroup label="Domestic">
+                        <option>BDO — Bandung</option>
+                        <option>CGK — Jakarta</option>
+                        <option>SUB — Surabaya</option>
+                        <option>DPS — Denpasar</option>
+                        <option>UPG — Makassar</option>
+                        <option>KNO — Medan</option>
+                        <option>BPN — Balikpapan</option>
+                        <option>LOP — Lombok</option>
+                        <option>PDG — Padang</option>
+                    </optgroup>
+                    <optgroup label="International">
+                        <option>SIN — Singapore</option>
+                        <option>KUL — Kuala Lumpur</option>
+                        <option>BKK — Bangkok</option>
+                        <option>HND — Tokyo</option>
+                        <option>ICN — Seoul</option>
+                        <option>SYD — Sydney</option>
+                        <option>LHR — London</option>
+                        <option>JFK — New York</option>
+                        <option>DXB — Dubai</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="to">To</label>
+                <select id="to">
+                    <option value="">Select City</option>
+                    <optgroup label="Domestic">
+                        <option>BDO — Bandung</option>
+                        <option>CGK — Jakarta</option>
+                        <option>SUB — Surabaya</option>
+                        <option>DPS — Denpasar</option>
+                        <option>UPG — Makassar</option>
+                        <option>KNO — Medan</option>
+                        <option>BPN — Balikpapan</option>
+                        <option>LOP — Lombok</option>
+                        <option>PDG — Padang</option>
+                    </optgroup>
+                    <optgroup label="International">
+                        <option>SIN — Singapore</option>
+                        <option>KUL — Kuala Lumpur</option>
+                        <option>BKK — Bangkok</option>
+                        <option>HND — Tokyo</option>
+                        <option>ICN — Seoul</option>
+                        <option>SYD — Sydney</option>
+                        <option>LHR — London</option>
+                        <option>JFK — New York</option>
+                        <option>DXB — Dubai</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" id="date">
+             </div>
+
+            <div class="form-group passenger">
+                <label for="adult">Adult</label>
+                <input type="number" id="adult" value="1" min="1">
+            </div>
+
+            <div class="form-group passenger">
+                <label for="child">Child</label>
+                <input type="number" id="child" value="0" min="0">
+            </div>
+
+            <button type="submit" class="btn">
+                Search Flights
+            </button>
+
+        </form>
+    </section>
+
+    <section class="destinations">
+
+        <div class="page-title">
+            <h2>Top Destination</h2>
+            <p>Explore various destinations with Flyfie</p>
+        </div>
+
+        <div class="destination-grid">
+            <div class="destination-card">
+                <img src="images/denpasar.jpg" alt="Bali">
+                <div class="card-content">
+                    <h3>Bali</h3>
+                    <p>Denpasar (DPS)</p>
+
+                    <span>Start from</span>
+                    <strong>Rp750.000</strong>
+
+                    <a href="bookingform.html" class="btn">
+                        Book Ticket
+                    </a>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="images/yogyakarta.jpg" alt="Yogyakarta">
+                <div class="card-content">
+                    <h3>Yogyakarta</h3>
+                    <p>Yogyakarta (YIA)</p>
+
+                    <span>Start from</span>
+                    <strong>Rp500.000</strong>
+
+                    <a href="bookingform.html" class="btn">
+                        Book Ticket
+                    </a>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img src="images/singapore.jpg" alt="Singapore">
+                <div class="card-content">
+                    <h3>Singapore</h3>
+                    <p>Singapore (SIN)</p>
+
+                    <span>Start from</span>
+                    <strong>Rp1.200.000</strong>
+
+                    <a href="bookingform.html" class="btn">
+                        Book Ticket
+                    </a>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="images/bangkok.jpg" alt="Bangkok">
+                <div class="card-content">
+                    <h3>Thailand</h3>
+                    <p>Bangkok (BKK)</p>
+
+                    <span>Start from</span>
+                    <strong>Rp1.300.000</strong>
+
+                    <a href="bookingform.html" class="btn">
+                        Book Ticket
+                    </a>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="images/tokyo.jpg" alt="Tokyo">
+                <div class="card-content">
+                    <h3>Japan</h3>
+                    <p>Tokyo (HND)</p>
+
+                    <span>Start from</span>
+                    <strong>Rp2.000.000</strong>
+
+                    <a href="bookingform.html" class="btn">
+                        Book Ticket
+                    </a>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="images/london.jpg" alt="London">
+                <div class="card-content">
+                    <h3>United Kingdom</h3>
+                    <p>London (LHR)</p>
+
+                    <span>Start from</span>
+                    <strong>Rp12.500.000</strong>
+
+                    <a href="bookingform.html" class="btn">
+                        Book Ticket
+                    </a>
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    <section class="why-us">
+        <div class="page-title">
+            <h2>Why Flyfie?</h2>
+            <p>Comfortable travel for every passenger.</p>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>✈️ Comfortable</h3>
+                <p>
+                    Enjoy a comfortable flying experience
+                    throughout your journey.
+                </p>
+            </div>
+            <div class="feature">
+                <h3>🛡️ Safe</h3>
+                <p>
+                    Passenger safety is the top priority
+                    in every flight.
+                </p>
+            </div>
+            <div class="feature">
+                <h3>🌏 Affordable</h3>
+                <p>
+                    Flight options with affordable prices
+                    for various needs.
+                </p>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gregorius Rivano Gultom - Informatika SMAN 3 Bandung. All pictures from <a href="https://unsplash.com/" target="_blank">Unsplash</a>.</p>
+    </footer>
+</body>
+</html>

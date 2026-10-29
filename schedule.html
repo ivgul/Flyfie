@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flyfie ∙ Your journey partner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="images/logo.jpeg" alt="Flyfie Logo">
+            <h1>Flyfie</h1>
+        </a>
+        <ul class="nav-links">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="profile.html">About Us</a>
+            </li>
+
+            <li class="dropdown">
+
+        <a href="destinations.html">
+            Destinations <span class="arrow"></span>
+        </a>
+
+        <ul class="dropdown-menu">
+            <li>
+                <a href="domestic.html">Domestic</a>
+            </li>
+
+            <li>
+                <a href="international.html">International</a>
+            </li>
+        </ul>
+
+            <li>
+                <a href="promos.html">Promos</a>
+            </li>
+
+            <li>
+                <a href="bookingform.html">Booking</a>
+            </li>
+
+            <li>
+                <a href="schedule.html" class="active">Schedules</a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+        <section class="about-header">
+            <h2>Flight Schedules</h2>
+            <p>Check Flyfie flight schedules and plan your journey.</p>
+        </section>
+
+        <section class="schedule-section">
+            <div class="schedule-container">
+
+                <!-- SEARCH / FILTER -->
+                <div class="schedule-search">
+                    <div class="schedule-search-header">
+                        <div>
+                            <span class="schedule-label">FLIGHT INFORMATION</span>
+                            <h2>Find a Flight</h2>
+                            <p>Check departure and arrival times for your journey.</p>
+                        </div>
+                    </div>
+
+                    <div class="schedule-filter">
+                        <div class="schedule-form-group">
+                            <label for="schedule-date">Date</label>
+                            <input type="date" id="schedule-date">
+                        </div>
+
+                        <div class="schedule-form-group">
+                            <label for="schedule-from">From</label>
+                            <select id="schedule-from">
+                                <option value="">All Airports</option>
+                                <optgroup label="Domestic">
+                                    <option>BDO — Bandung</option>
+                                    <option>CGK — Jakarta</option>
+                                    <option>SUB — Surabaya</option>
+                                    <option>DPS — Denpasar</option>
+                                    <option>UPG — Makassar</option>
+                                    <option>KNO — Medan</option>
+                                    <option>BPN — Balikpapan</option>
+                                    <option>LOP — Lombok</option>
+                                    <option>PDG — Padang</option>
+                                    </optgroup>
+                                    <optgroup label="International">
+                                    <option>SIN — Singapore</option>
+                                    <option>KUL — Kuala Lumpur</option>
+                                    <option>BKK — Bangkok</option>
+                                    <option>HND — Tokyo</option>
+                                    <option>ICN — Seoul</option>
+                                    <option>SYD — Sydney</option>
+                                    <option>LHR — London</option>
+                                    <option>JFK — New York</option>
+                                    <option>DXB — Dubai</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div class="schedule-form-group">
+                            <label for="schedule-to">To</label>
+                            <select id="schedule-to">
+                                <option value="">All Airports</option>
+                                <optgroup label="Domestic">
+                                    <option>BDO — Bandung</option>
+                                    <option>CGK — Jakarta</option>
+                                    <option>SUB — Surabaya</option>
+                                    <option>DPS — Denpasar</option>
+                                    <option>UPG — Makassar</option>
+                                    <option>KNO — Medan</option>
+                                    <option>BPN — Balikpapan</option>
+                                    <option>LOP — Lombok</option>
+                                    <option>PDG — Padang</option>
+                                    </optgroup>
+                                    <optgroup label="International">
+                                    <option>SIN — Singapore</option>
+                                    <option>KUL — Kuala Lumpur</option>
+                                    <option>BKK — Bangkok</option>
+                                    <option>HND — Tokyo</option>
+                                    <option>ICN — Seoul</option>
+                                    <option>SYD — Sydney</option>
+                                    <option>LHR — London</option>
+                                    <option>JFK — New York</option>
+                                    <option>DXB — Dubai</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <button type="button" class="schedule-search-btn">
+                            Search
+                        </button>
+                    </div>
+                </div>
+
+                <!-- DATE -->
+                <div class="schedule-date-heading">
+                    <div>
+                        <span>FLYFIE SCHEDULE</span>
+                        <h2>Today's Flights</h2>
+                    </div>
+                    <p>All times are shown in local time.</p>
+                </div>
+
+                <!-- SCHEDULE TABLE -->
+                <div class="schedule-table-card">
+                    <table class="schedule-table">
+                        <thead>
+                            <tr>
+                                <th>Flight</th>
+                                <th>From</th>
+                                <th>To</th>
+                                <th>Departure</th>
+                                <th>Arrival</th>
+                                <th>Duration</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <!-- FLIGHT 1 -->
+                            <tr>
+                                <td>
+                                    <strong class="flight-code">
+                                        FL 201
+                                    </strong>
+                                </td>
+                                <td>
+                                    <div class="airport">
+                                        <strong>CGK</strong>
+                                        <span>Jakarta</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="airport">
+                                        <strong>DPS</strong>
+                                        <span>Denpasar</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <strong>07:15</strong>
+                                </td>
+                                <td>
+                                    <strong>10:05</strong>
+                                </td>
+                                <td>
+                                    1h 50m
+                                </td>
+                                <td>
+                                    <span class="flight-status">
+                                        On Time
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <!-- FLIGHT 2 -->
+                            <tr>
+                                <td>
+                                    <strong class="flight-code">
+                                        FL 205
+                                    </strong>
+                                </td>
+                                <td>
+                                    <div class="airport">
+                                        <strong>CGK</strong>
+                                        <span>Jakarta</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="airport">
+                                        <strong>DPS</strong>
+                                        <span>Denpasar</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <strong>11:30</strong>
+                                </td>
+                                <td>
+                                    <strong>14:20</strong>
+                                </td>
+                                <td>
+                                    1h 50m
+                                </td>
+                                <td>
+                                    <span class="flight-status">
+                                        On Time
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <!-- FLIGHT 3 -->
+                            <tr>
+                                <td>
+                                    <strong class="flight-code">
+                                        FL 801
+                                    </strong>
+                                </td>
+                                <td>
+                                    <div class="airport">
+                                        <strong>CGK</strong>
+                                        <span>Jakarta</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="airport">
+                                        <strong>SIN</strong>
+                                        <span>Singapore</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <strong>06:15</strong>
+                                </td>
+                                <td>
+                                    <strong>09:05</strong>
+                                </td>
+                                <td>
+                                    1h 50m
+                                </td>
+                                <td>
+                                    <span class="flight-status">
+                                        On Time
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <!-- FLIGHT 4 -->
+                            <tr>
+                                <td>
+                                    <strong class="flight-code">
+                                        FL 821
+                                    </strong>
+                                </td>
+                                <td>
+                                    <div class="airport">
+                                        <strong>CGK</strong>
+                                        <span>Jakarta</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="airport">
+                                        <strong>BKK</strong>
+                                        <span>Bangkok</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <strong>07:00</strong>
+                                </td>
+                                <td>
+                                    <strong>10:35</strong>
+                                </td>
+                                <td>
+                                    3h 35m
+                                </td>
+                                <td>
+                                    <span class="flight-status">
+                                        On Time
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <!-- FLIGHT 5 -->
+                            <tr>
+                                <td>
+                                    <strong class="flight-code">
+                                        FL 841
+                                    </strong>
+                                </td>
+                                <td>
+                                    <div class="airport">
+                                        <strong>CGK</strong>
+                                        <span>Jakarta</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="airport">
+                                        <strong>HND</strong>
+                                        <span>Tokyo</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <strong>00:15</strong>
+                                </td>
+                                <td>
+                                    <strong>09:05</strong>
+                                </td>
+                                <td>
+                                    7h 50m
+                                </td>
+                                <td>
+                                    <span class="flight-status">
+                                        On Time
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <!-- FLIGHT 6 -->
+                            <tr>
+                                <td>
+                                    <strong class="flight-code">
+                                        FL 881
+                                    </strong>
+                                </td>
+                                <td>
+                                    <div class="airport">
+                                        <strong>CGK</strong>
+                                        <span>Jakarta</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="airport">
+                                        <strong>LHR</strong>
+                                        <span>London</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <strong>00:40</strong>
+                                </td>
+                                <td>
+                                    <strong>07:15</strong>
+                                </td>
+                                <td>
+                                    13h 35m
+                                </td>
+                                <td>
+                                    <span class="flight-status">
+                                        On Time
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- INFORMATION -->
+                <div class="schedule-info">
+                    <div class="schedule-info-item">
+                        <div class="info-icon">
+                            i
+                        </div>
+                        <div>
+                            <h3>Flight Information</h3>
+                            <p>
+                                Flight schedules may change due to operational
+                                requirements. Please check your flight details
+                                before travelling.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="schedule-info-item">
+                        <div class="info-icon">
+                            ⏱
+                        </div>
+                        <div>
+                            <h3>Local Time</h3>
+                            <p>
+                                Departure and arrival times are displayed
+                                according to the local time of each airport.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gregorius Rivano Gultom - Informatika SMAN 3 Bandung. All pictures from <a href="https://unsplash.com/" target="_blank">Unsplash</a>.</p>
+    </footer>
+</body>
+</html>

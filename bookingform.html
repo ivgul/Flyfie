@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flyfie ∙ Your journey partner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="images/logo.jpeg" alt="Flyfie Logo">
+            <h1>Flyfie</h1>
+        </a>
+        <ul class="nav-links">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="profile.html">About Us</a>
+            </li>
+            
+            <li class="dropdown">
+
+        <a href="destinations.html">
+            Destinations <span class="arrow"></span>
+        </a>
+
+        <ul class="dropdown-menu">
+            <li>
+                <a href="domestic.html">Domestic</a>
+            </li>
+
+            <li>
+                <a href="international.html">International</a>
+            </li>
+        </ul>
+
+            <li>
+                <a href="promos.html">Promos</a>
+            </li>
+
+            <li>
+                <a href="bookingform.html" class="active">Booking</a>
+            </li>
+
+            <li>
+                <a href="schedule.html">Schedules</a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+
+    <main class="booking-page">
+        <section class="about-header">
+            <h2>Book your Flight</h2>
+            <p>Complete your journey with Flyfie.</p>
+        </section>
+
+        <section class="booking-section">
+            <div class="booking-container">
+                <div class="booking-steps">
+                    <div class="booking-step active">
+                        <span>1</span>
+                        <p>Flight</p>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="booking-step">
+                        <span>2</span>
+                        <p>Passenger</p>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="booking-step">
+                        <span>3</span>
+                        <p>Extras</p>
+                    </div>
+
+                    <div class="step-line"></div>
+                    <div class="booking-step">
+                        <span>4</span>
+                        <p>Payment</p>
+                    </div>
+                </div>
+
+                <div class="booking-card">
+                    <div class="booking-card-header">
+                        <div>
+                            <span class="booking-label">STEP 1</span>
+                            <h2>Flight Information</h2>
+                            <p>Select your preferred journey.</p>
+                        </div>
+                    </div>
+                    <div class="trip-type">
+                        <label class="trip-option active">
+                            <input type="radio" name="trip" checked>
+                            <span>Round Trip</span>
+                        </label>
+                        <label class="trip-option">
+                            <input type="radio" name="trip">
+                            <span>One Way</span>
+                        </label>
+                        <label class="trip-option">
+                            <input type="radio" name="trip">
+                            <span>Multi-City</span>
+                        </label>
+                    </div>
+
+                    <div class="booking-grid">
+                        <div class="form-group">
+                            <label for="from">From</label>
+                            <select id="from">
+                                <option value="">Select City</option>
+                                <optgroup label="Domestic">
+                                    <option>BDO — Bandung</option>
+                                    <option>CGK — Jakarta</option>
+                                    <option>SUB — Surabaya</option>
+                                    <option>DPS — Denpasar</option>
+                                    <option>UPG — Makassar</option>
+                                    <option>KNO — Medan</option>
+                                    <option>BPN — Balikpapan</option>
+                                    <option>LOP — Lombok</option>
+                                    <option>PDG — Padang</option>
+                                    </optgroup>
+                                    <optgroup label="International">
+                                    <option>SIN — Singapore</option>
+                                    <option>KUL — Kuala Lumpur</option>
+                                    <option>BKK — Bangkok</option>
+                                    <option>HND — Tokyo</option>
+                                    <option>ICN — Seoul</option>
+                                    <option>SYD — Sydney</option>
+                                    <option>LHR — London</option>
+                                    <option>JFK — New York</option>
+                                    <option>DXB — Dubai</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="to">To</label>
+                                <select id="to">
+                                    <option value="">Select City</option>
+                                    <optgroup label="Domestic">
+                                        <option>BDO — Bandung</option>
+                                        <option>CGK — Jakarta</option>
+                                        <option>SUB — Surabaya</option>
+                                        <option>DPS — Denpasar</option>
+                                        <option>UPG — Makassar</option>
+                                        <option>KNO — Medan</option>
+                                        <option>BPN — Balikpapan</option>
+                                        <option>LOP — Lombok</option>
+                                        <option>PDG — Padang</option>
+                                    </optgroup>
+                                    <optgroup label="International">
+                                        <option>SIN — Singapore</option>
+                                        <option>KUL — Kuala Lumpur</option>
+                                        <option>BKK — Bangkok</option>
+                                        <option>HND — Tokyo</option>
+                                        <option>ICN — Seoul</option>
+                                        <option>SYD — Sydney</option>
+                                        <option>LHR — London</option>
+                                        <option>JFK — New York</option>
+                                        <option>DXB — Dubai</option>
+                                    </optgroup>
+                                </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="departure">Departure</label>
+                            <input type="date" id="departure">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="return">Return</label>
+                            <input type="date" id="return">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="adults">Adults</label>
+                            <select id="adults">
+                                <option>1 Adult</option>
+                                <option>2 Adults</option>
+                                <option>3 Adults</option>
+                                <option>4 Adults</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="children">Children</label>
+                            <select id="children">
+                                <option>0 Children</option>
+                                <option>1 Child</option>
+                                <option>2 Children</option>
+                                <option>3 Children</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cabin">Cabin Class</label>
+                            <select id="cabin">
+                                <option>Economy</option>
+                                <option>Premium Economy</option>
+                                <option>Business</option>
+                                <option>First Class</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="promo">Promo Code</label>
+                            <input type="text" id="promo" placeholder="Optional">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking-card">
+                    <div class="booking-card-header">
+                        <div>
+                            <span class="booking-label">STEP 2</span>
+                            <h2>Passenger Information</h2>
+                            <p>Please enter the passenger's details exactly as shown on their travel document.</p>
+                        </div>
+                    </div>
+
+                    <div class="passenger-box">
+                        <div class="passenger-heading">
+                            <h3>Passenger 1</h3>
+                            <span>Adult</span>
+                        </div>
+
+                        <div class="booking-grid">
+                            <div class="form-group">
+                                <label for="title1">Title</label>
+                                <select id="title1">
+                                    <option>Mr</option>
+                                    <option>Ms</option>
+                                    <option>Mrs</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="gender1">Gender</label>
+                                <select id="gender1">
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="first-name1">First / Given Name</label>
+                                <input
+                                    type="text"
+                                    id="first-name1"
+                                    placeholder="Enter given name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="last-name1">Last / Family Name</label>
+                                <input
+                                    type="text"
+                                    id="last-name1"
+                                    placeholder="Enter family name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="dob1">Date of Birth</label>
+                                <input type="date" id="dob1">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="nationality1">Nationality</label>
+                                <select id="nationality1">
+                                    <option>Indonesian</option>
+                                    <option>Singaporean</option>
+                                    <option>Malaysian</option>
+                                    <option>Japanese</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="passport1">Passport / ID Number</label>
+                                <input
+                                    type="text"
+                                    id="passport1"
+                                    placeholder="Enter document number">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="passport-expiry1">Document Expiry</label>
+                                <input type="date" id="passport-expiry1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-section">
+                        <div class="passenger-heading">
+                            <h3>Contact Information</h3>
+                        </div>
+                        <div class="booking-grid">
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    placeholder="example@email.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Mobile Number</label>
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    placeholder="+62 812 3456 7890">
+                            </div>
+                        </div>
+                        <p class="form-note">
+                            Your booking confirmation and travel information will be sent to this email address.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="booking-card">
+                    <div class="booking-card-header">
+                        <div>
+                            <span class="booking-label">STEP 3</span>
+                            <h2>Travel Extras</h2>
+                            <p>Customize your journey with optional services.</p>
+                        </div>
+                    </div>
+
+                    <div class="extras-list">
+                        <label class="extra-item">
+                            <input type="checkbox">
+                            <div class="extra-info">
+                                <h3>Extra Baggage</h3>
+                                <p>Add 20 kg additional checked baggage.</p>
+                            </div>
+                            <strong>+ Rp350.000</strong>
+                        </label>
+
+                        <label class="extra-item">
+                            <input type="checkbox">
+                            <div class="extra-info">
+                                <h3>Standard Seat Selection</h3>
+                                <p>Choose your preferred standard seat.</p>
+                            </div>
+                            <strong>+ Rp75.000</strong>
+                        </label>
+
+                        <label class="extra-item">
+                            <input type="checkbox">
+                            <div class="extra-info">
+                                <h3>Extra Legroom Seat</h3>
+                                <p>Enjoy additional space during your flight.</p>
+                            </div>
+                            <strong>+ Rp200.000</strong>
+                        </label>
+
+                        <label class="extra-item">
+                            <input type="checkbox">
+                            <div class="extra-info">
+                                <h3>Special Meal</h3>
+                                <p>Choose a special meal for your journey.</p>
+                            </div>
+                            <strong>+ Rp125.000</strong>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="booking-card">
+                    <div class="booking-card-header">
+                        <div>
+                            <span class="booking-label">STEP 4</span>
+                            <h2>Review & Payment</h2>
+                            <p>Review your booking before completing your reservation.</p>
+                        </div>
+                    </div>
+
+                    <div class="summary-box">
+                        <div class="summary-header">
+                            <span>OUTBOUND</span>
+                            <strong>CGK → DPS</strong>
+                        </div>
+                        <div class="flight-summary">
+                            <div>
+                                <small>Jakarta</small>
+                                <strong>07:15</strong>
+                                <span>CGK</span>
+                            </div>
+                            <div class="flight-duration">
+                                <span>1h 50m</span>
+                                <div></div>
+                                <small>Non-stop</small>
+                            </div>
+                            <div>
+                                <small>Denpasar</small>
+                                <strong>10:05</strong>
+                                <span>DPS</span>
+                            </div>
+                        </div>
+                        <div class="flight-number">
+                            Flyfie FL 201 · Economy
+                        </div>
+                    </div>
+
+                    <div class="price-summary">
+                        <div>
+                            <span>Flight Fare</span>
+                            <strong>Rp1.249.000</strong>
+                        </div>
+                        <div>
+                            <span>Taxes & Fees</span>
+                            <strong>Rp150.000</strong>
+                        </div>
+                        <div>
+                            <span>Travel Extras</span>
+                            <strong>Rp0</strong>
+                        </div>
+                        <div class="total-price">
+                            <span>Total</span>
+                            <strong>Rp1.399.000</strong>
+                        </div>
+                    </div>
+
+                    <div class="payment-section">
+                        <h3>Payment Method</h3>
+                        <div class="payment-options">
+                            <label class="payment-option">
+                                <input type="radio" name="payment" checked>
+                                <span>Credit / Debit Card</span>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment">
+                                <span>E-Wallet</span>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment">
+                                <span>Bank Transfer</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="terms">
+                        <label>
+                            <input type="checkbox">
+                            <span>
+                                I have reviewed the passenger information and agree to
+                                Flyfie's Terms & Conditions and Privacy Policy.
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="booking-submit">
+                        <button type="button" class="btn btn-book">
+                            Complete Booking
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gregorius Rivano Gultom - Informatika SMAN 3 Bandung. All pictures from <a href="https://unsplash.com/" target="_blank">Unsplash</a>.</p>
+    </footer>
+    
+</body>
+
+</html>
